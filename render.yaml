@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: weather-app
+    buildCommand: npm run build
+    publishDirectory: build
+    env: static
+    envVars:
+      - key: REACT_APP_WEATHER_API_KEY
+        value: 530ba0b55d55e84a05c37f8270056ff7
